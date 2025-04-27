@@ -1,0 +1,31 @@
+GET http://localhost:5010/companies
+
+###
+POST http://localhost:5010/companies
+Content-Type: application/json
+
+{
+    "name": "Rocketlab",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Rocket_Lab_logo.svg/2560px-Rocket_Lab_logo.svg.png",
+    "website": "https://www.rocketlabusa.com/",
+    "headquarters": "Long Beach, California, U.S"
+}
+
+###
+
+PUT http://localhost:3001/authors/67cb04be153b6623054865f4
+Content-Type: application/json
+
+{
+    "name": "Rocketlab",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Rocket_Lab_logo.svg/2560px-Rocket_Lab_logo.svg.png",
+    "website": "https://www.rocketlabusa.com/",
+    "slug": "slug di Rocketlab",
+    "headquarters": "Long Beach, California, U.S"
+}
+
+###
+
+DELETE http://localhost:3001/authors/67cb04be153b6623054865f4
+Content-Type: application/json
+

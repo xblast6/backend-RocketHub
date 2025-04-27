@@ -1,0 +1,47 @@
+GET http://localhost:5010/rockets
+
+###
+POST http://localhost:5010/rockets
+Content-Type: application/json
+
+{
+    "name": "Falcon 9",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Iridium-1_Launch_%2832312419215%29.jpg",
+    "company": "67eac217aabd9e40a365c3e2",
+    "height": {
+        "value": 70
+    },
+    "diameter": {
+        "value": 3.66
+    },
+    "mass": {
+        "value": 549.054
+    },
+    "stages": {
+        "stageNumber": 2,
+        "firstStageEngine": {
+            "engineName": "Merlin 1D+",
+            "engineCount": 9
+        },
+        "secondStageEngine": {
+            "engineName": "Merlin 1D vacuum+",
+            "engineCount": 1
+        }
+        
+    }
+}
+
+###
+
+PUT http://localhost:5010/rockets/67ed5ac54a01b330cae3a31f
+Content-Type: application/json
+
+{
+    "name": "Falcon 912"
+}
+
+###
+
+DELETE http://localhost:5010/rockets/67ed5ac54a01b330cae3a31f
+Content-Type: application/json
+

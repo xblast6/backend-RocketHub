@@ -1,0 +1,28 @@
+GET http://localhost:5010/countdowns
+
+###
+POST http://localhost:5010/countdowns
+Content-Type: application/json
+
+{
+    "rocket": "67efcc3cd81093d1a9e32f18",
+    "company": "67eabdc4aabd9e40a365c3d8",
+    "launchSite": "Kennedy Space Center",
+    "launchDate": "{{$datetime iso8601}}",
+    "description": "Lancio di satelliti Kuiper"
+}
+
+###
+
+PUT http://localhost:5010/countdowns/67ed5ac54a01b330cae3a31f
+Content-Type: application/json
+
+{
+    "name": "Falcon 912"
+}
+
+###
+
+DELETE http://localhost:5010/countdowns/67ed5ac54a01b330cae3a31f
+Content-Type: application/json
+

@@ -1,0 +1,28 @@
+GET http://localhost:5010/user
+
+###
+POST http://localhost:5010/auth/signup
+Content-Type: application/json
+
+{
+    "email": "adminadmin3@admin.it",
+    "password": "adminpass1!",
+    "name": "nome admin3",
+    "role": "admin",
+    "image": "son la foto di profilo di admin"
+}
+
+###
+
+PUT http://localhost:5010/users/
+Content-Type: application/json
+
+{
+    "name": "Falcon 912"
+}
+
+###
+
+DELETE http://localhost:5010/users
+Content-Type: application/json
+
